@@ -17,7 +17,7 @@ keyword ```computer vision```, ```document layout analysis```, ```transformer```
   - can use third party tools to convert labelme output to cooc format: such as https://github.com/fcakyon/labelme2coco
 - label studio https://labelstud.io/
   - mature but with decent learning curve
-  - can natively output label in coco format
+  - can natively output label in coco format (therefore, label data of all the images are compiled into one json file)
 
 ### LabelMe label output format
 - example json file below shows three different labels in both rectangle (bbox) and polygon (mask) formats
