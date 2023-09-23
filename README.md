@@ -51,6 +51,6 @@ detectron2: 0.6
 - Clone unilm repo (DiT is part of unilm) ```git clone https://github.com/microsoft/unilm.git```
   - If you use Python3.10 or above, you will encounter this error **ImportError: cannot import name 'Iterable' from 'collections'**
   - Please modify *unilm/dit/object_detection/ditod/table_evaluation/data_structure.py*: replace line 6 as ```Iterable from collections.abc```
-
+**DiT_tutorial.ipynb**
 ## 3 Model retraining
 - 
