@@ -11,12 +11,34 @@ keyword ```computer vision```, ```document layout analysis```, ```transformer```
 - PRImA Layout Analysis Dataset (2009) 1240 pages {magazines pages, technical articles}
 
 ### Note2: labeling tools
-- labelme  https://github.com/wkentaro/labelme
-  - app can ocassionally crush with limited functions 
+- labelme  https://github.com/wkentaro/labelme   
+  - very basic functions and app can crush sometimes (remember to enable autosave)
+  - outut label json file for each image separately 
   - can use third party tools to convert labelme output to cooc format: such as https://github.com/fcakyon/labelme2coco
 - label studio https://labelstud.io/
   - mature but with decent learning curve
-  - natively convert output to coco format
+  - can natively output label in coco format
+
+### LabelMe label output format
+- point coordinates for rectangle ```[[x1, y1], [x3, y3]]```
+- point coordinates for polygon (mask) ```[[x1, y1], [x2, y2], [x3, y3], [x4, y4]]```
+```
+{"imagePath": "123.jpg",
+  "imageData": null,
+  "shapes":
+      [
+      {"shape_type": "rectangle", "points": [[204.9180327868852, 131.14754098360655], [1529.5081967213114, 1944.2622950819673]], "flags": {}, "group_id": null, "label": "section"},
+      {"shape_type": "rectangle", "points": [[1585.245901639344, 78.68852459016394], [200.97022415523588, 1.4210854715202004e-14]], "flags": {}, "group_id": null, "label": "Header"},
+      {"shape_type": "rectangle", "points": [[204.9180327868852, 1957.377049180328], [537.7049180327868, 2054.0983606557375]], "flags": {}, "group_id": null, "label": "section"},
+      {"shape_type": "polygon", "points": [[204.9180327868852, 131.14754098360655], [204.9180327868852, 1944.2622950819673], [1529.5081967213114, 1944.2622950819673], [1529.5081967213114, 131.14754098360655]], "flags": {}, "group_id": null, "label": "section"},
+      {"shape_type": "polygon", "points": [[1585.245901639344, 78.68852459016394], [1585.245901639344, 1.4210854715202004e-14], [200.97022415523588, 1.4210854715202004e-14], [200.97022415523588, 78.68852459016394]], "flags": {}, "group_id": null, "label": "Header"},
+      {"shape_type": "polygon", "points": [[204.9180327868852, 1957.377049180328], [204.9180327868852, 2054.0983606557375], [537.7049180327868, 2054.0983606557375], [537.7049180327868, 1957.377049180328]], "flags": {}, "group_id": null, "label": "section"}
+      ],
+  "version": "5.1.1",
+  "flags": {},
+  "imageHeight": 2200,
+  "imageWidth": 1700}
+```
 
 ## 2 Model retraining
 - 
