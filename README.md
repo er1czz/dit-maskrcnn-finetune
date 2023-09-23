@@ -40,6 +40,17 @@ keyword ```computer vision```, ```document layout analysis```, ```transformer```
   "imageHeight": 2200,
   "imageWidth": 1700}
 ```
+## 2 Setup environment
+- below is the version of PyTorch and detectron2 I installed and ran successfully on both AWS EC2 g4dn.2xlarge instance (NVIDIA Turing T4 32GB VRAM) and my local workstation (NVIDIA Turing TU104 8GB VRAM)
+```
+torch:  2.0 ; cuda:  cu118
+detectron2: 0.6
+```
+- Install cuda and then PyTorch
+- Build detectron2 from source ```python -m pip install 'git+https://github.com/facebookresearch/detectron2.git' ```
+- Clone unilm repo (DiT is part of unilm) ```git clone https://github.com/microsoft/unilm.git```
+  - If you use Python3.10 or above, you will encounter this error **ImportError: cannot import name 'Iterable' from 'collections'**
+  - Please modify *unilm/dit/object_detection/ditod/table_evaluation/data_structure.py*: replace line 6 as ```Iterable from collections.abc```
 
-## 2 Model retraining
+## 3 Model retraining
 - 
