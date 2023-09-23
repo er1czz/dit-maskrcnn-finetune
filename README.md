@@ -20,6 +20,7 @@ keyword ```computer vision```, ```document layout analysis```, ```transformer```
   - can natively output label in coco format
 
 ### LabelMe label output format
+- example json file below shows three different labels in both rectangle (bbox) and polygon (mask) formats
 - point coordinates for rectangle ```[[x1, y1], [x3, y3]]```
 - point coordinates for polygon (mask) ```[[x1, y1], [x2, y2], [x3, y3], [x4, y4]]```
 ```
