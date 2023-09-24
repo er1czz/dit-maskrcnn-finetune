@@ -43,7 +43,7 @@
   "imageWidth": 1700}
 ```
 ## 2 Setup environment
-- below is the version of PyTorch and detectron2 I installed and ran successfully on both AWS EC2 g4dn.2xlarge instance (NVIDIA Turing T4 32GB VRAM) and my local workstation (NVIDIA Turing TU104 8GB VRAM)
+- below is the version of PyTorch and detectron2 I installed and ran successfully on both AWS EC2 g4dn.2xlarge instance (NVIDIA Turing T4 16GB VRAM) and a local workstation (NVIDIA Turing TU104 8GB VRAM)
 ```
 torch:  2.0 ; cuda:  cu118
 detectron2: 0.6
