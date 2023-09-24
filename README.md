@@ -63,4 +63,7 @@ detectron2: 0.6
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
 
-<p align="center"><img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_original_5classes.png" title="original model for multi-classes detection" style = "border:10px solid white"> <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_tuned_1class.png" title="fine-tuned model for single-class detection" style = "border:10px solid white"></p> 
+<p align="center">
+  <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_original_5classes.png" title="original model for multi-classes detection" style = "border:10px solid white" width="300"> 
+  <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_tuned_1class.png" title="fine-tuned model for single-class detection" style = "border:10px solid white" width="300">
+</p> 
