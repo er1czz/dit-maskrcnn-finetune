@@ -6,7 +6,7 @@
 
 <p align="center"><img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/example_coco_masks.png" style = "border:10px solid white"> <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/example_labelme_bbox.png" style = "border:10px solid white"></p> 
 <p align="center">LEFT inset: COCO mask labels for multi-classes detection</p>
-<p align="center">RIGHT inset: labelme bounding box (bbox) labels for single-class detection</p>
+<p align="center">RIGHT inset: labelme rectangle mask labels (converted from bounding boxes) for single-class detection</p>
 
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
