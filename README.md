@@ -1,6 +1,6 @@
 # Document Layout Analysis from Data Labeling to Model Retraining
-keyword ```computer vision```, ```document layout analysis```, ```transformer```, ```mask rcnn```, ```fine tune```, ```retrain```
-
+keyword: ```computer vision```, ```object detection```,  ```document layout analysis```,  ```transformer```, ```fine-tune```, ```retrain```
+highlight: ```label conversion from labelme bboxes to coco masks```, ```retrain model pretrained for multi-classes object detection into single-class```, ```detectron2```, ```Document image Transformer (DiT)```
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
 - DocLayNet (2023) 28GB, 80863 pages {financial_reports,scientific_articles,laws_and_regulations, government_tenders, manuals, patents}
