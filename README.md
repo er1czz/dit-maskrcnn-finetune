@@ -3,6 +3,11 @@
 - highlight:
   - ```label conversion from labelme bboxes to coco masks```
   - ```retrain model pretrained for multi-classes object detection into single-class```
+
+<p align="center"><img src="https://github.com/er1czz/stable-diffusion-with-UI/blob/main/sd_UI_demo.png" style = "border:10px solid white"></p> 
+<p align="center"><img src="https://github.com/er1czz/stable-diffusion-with-UI/blob/main/sd_UI_demo.png" style = "border:10px solid white"></p> 
+
+
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
 - DocLayNet (2023) 28GB, 80863 pages {financial_reports,scientific_articles,laws_and_regulations, government_tenders, manuals, patents}
