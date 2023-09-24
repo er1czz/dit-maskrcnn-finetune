@@ -5,7 +5,8 @@
   - ```retrain model pretrained for multi-classes object detection into single-class```
 
 <p align="center"><img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/example_coco_masks.png" style = "border:10px solid white"> <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/example_labelme_bbox.png" style = "border:10px solid white"></p> 
-<p align="center">LEFT inset: COCO mask labels for multi-classes detection, RIGHT inset: labelme bounding box (bbox) labels for single-class detection</p>
+<p align="center">LEFT inset: COCO mask labels for multi-classes detection</p>
+<p align="center">RIGHT inset: labelme bounding box (bbox) labels for single-class detection</p>
 
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
@@ -68,4 +69,5 @@ detectron2: 0.6
   <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_original_5classes.png" title="original model for multi-classes detection" style = "border:10px solid white" width="300"> 
   <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_tuned_1class.png" title="fine-tuned model for single-class detection" style = "border:10px solid white" width="300">
 </p> 
-<p align="center">LEFT inset: original model for multi-classes detection, RIGHT inset: fine-tuned model for single-class detection</p>
+<p align="center">LEFT inset: original model for multi-classes detection</p>
+<p align="center">RIGHT inset: fine-tuned model for single-class detection</p>
