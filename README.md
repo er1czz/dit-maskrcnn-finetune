@@ -1,5 +1,5 @@
 # Document Layout Analysis from Data Labeling to Model Retraining
-keyword ```computer vision```, ```document layout analysis```, ```transformer```, ```mask rcnn```
+keyword ```computer vision```, ```document layout analysis```, ```transformer```, ```mask rcnn```, ```fine tune```, ```retrain```
 
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
