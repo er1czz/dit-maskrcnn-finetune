@@ -1,0 +1,112 @@
+{
+  "version": "5.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "segment",
+      "points": [
+        [
+          47.068322981366464,
+          25.313664596273288
+        ],
+        [
+          211.66459627329192,
+          44.56832298136645
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          483.7142857142856,
+          26.55590062111801
+        ],
+        [
+          552.6583850931677,
+          47.052795031055894
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          50.79503105590061,
+          82.45652173913042
+        ],
+        [
+          295.5155279503105,
+          615.3757763975154
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          49.552795031055894,
+          621.5869565217391
+        ],
+        [
+          281.2298136645963,
+          650.77950310559
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          50.79503105590061,
+          650.77950310559
+        ],
+        [
+          293.0310559006211,
+          738.9782608695651
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          302.9689440993788,
+          83.07763975155278
+        ],
+        [
+          552.0372670807453,
+          737.7360248447204
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "PMC5514520_00012.jpg",
+  "imageData": null,
+  "imageHeight": 791,
+  "imageWidth": 596
+}

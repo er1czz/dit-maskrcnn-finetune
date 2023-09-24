@@ -1,0 +1,112 @@
+{
+  "version": "5.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "segment",
+      "points": [
+        [
+          61.00000000000006,
+          37.875000000000014
+        ],
+        [
+          169.75000000000006,
+          58.500000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          514.125,
+          39.125000000000014
+        ],
+        [
+          553.5,
+          60.375000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          68.50000000000006,
+          74.75000000000001
+        ],
+        [
+          546.625,
+          514.75
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          69.75000000000006,
+          519.125
+        ],
+        [
+          194.75000000000006,
+          535.375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          70.37500000000006,
+          543.5
+        ],
+        [
+          191.00000000000006,
+          563.5
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          68.50000000000006,
+          571.625
+        ],
+        [
+          544.125,
+          736.625
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "PMC5302692_00002.jpg",
+  "imageData": null,
+  "imageHeight": 792,
+  "imageWidth": 612
+}

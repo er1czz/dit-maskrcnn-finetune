@@ -1,0 +1,129 @@
+{
+  "version": "5.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "segment",
+      "points": [
+        [
+          45.5,
+          40.375000000000014
+        ],
+        [
+          120.5,
+          56.000000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          538.0,
+          42.250000000000014
+        ],
+        [
+          553.625,
+          57.250000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          46.75,
+          67.25000000000001
+        ],
+        [
+          555.5,
+          312.25
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          46.125,
+          328.5
+        ],
+        [
+          294.25,
+          747.25
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          303.625,
+          328.5
+        ],
+        [
+          557.375,
+          664.125
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          303.0,
+          674.75
+        ],
+        [
+          387.375,
+          692.25
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          304.875,
+          697.25
+        ],
+        [
+          556.75,
+          749.75
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "PMC3654277_00006.jpg",
+  "imageData": null,
+  "imageHeight": 792,
+  "imageWidth": 601
+}

@@ -1,0 +1,95 @@
+{
+  "version": "5.3.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "segment",
+      "points": [
+        [
+          47.375,
+          37.250000000000014
+        ],
+        [
+          73.625,
+          55.375000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          411.125,
+          38.500000000000014
+        ],
+        [
+          551.75,
+          57.250000000000014
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          45.5,
+          71.00000000000001
+        ],
+        [
+          558.625,
+          585.375
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          46.75,
+          601.0
+        ],
+        [
+          295.5,
+          746.0
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "segment",
+      "points": [
+        [
+          304.25,
+          599.75
+        ],
+        [
+          557.375,
+          747.25
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "PMC3863500_00003.jpg",
+  "imageData": null,
+  "imageHeight": 792,
+  "imageWidth": 601
+}
