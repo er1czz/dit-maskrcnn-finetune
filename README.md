@@ -53,4 +53,4 @@ detectron2: 0.6
   - Please modify *unilm/dit/object_detection/ditod/table_evaluation/data_structure.py* replace line 6 as ```Iterable from collections.abc```
   - for more details, please check **DiT_tutorial.ipynb**
 ## 3 Model retraining
-- please refer to DiT_tutorial.ipynb
+- please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
