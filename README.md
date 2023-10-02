@@ -64,6 +64,7 @@ detectron2: 0.6
 
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
+- therefore, the inference result from this "lightly" tuned model (right inset below) is not ideal albeit the prediction is for single-class.
 
 <p align="center">
   <img src="https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/result_original_5classes.png" title="original model for multi-classes detection" style = "border:10px solid white" width="300"> 
