@@ -30,6 +30,7 @@
 - example json file below shows three different labels in both rectangle (bbox) and polygon (mask) formats
 - point coordinates for rectangle ```[[x1, y1], [x3, y3]]```
 - point coordinates for polygon (mask) ```[[x1, y1], [x2, y2], [x3, y3], [x4, y4]]```
+- use this custom script to convert labelme to coco (all-in-one) [master_convert.py](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/master_convert.py)
 ```
 {"imagePath": "123.jpg",
   "imageData": null,
@@ -47,7 +48,7 @@
   "imageHeight": 2200,
   "imageWidth": 1700}
 ```
-- can use this custom script to convert labelme to coco (all-in-one) [master_convert.py](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/master_convert.py)
+
 ## 2 Setup environment
 - below is the version of PyTorch and detectron2 I installed and ran successfully on both AWS EC2 g4dn.2xlarge instance (NVIDIA Turing T4 16GB VRAM) and a local workstation (NVIDIA Turing TU104 8GB VRAM)
 ```
