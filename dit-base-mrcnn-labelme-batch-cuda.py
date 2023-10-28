@@ -5,7 +5,7 @@ Input: img directory
 
 Performance Note:
 AWS g4dn.2xlarge (8 vCPU, 1 CUDA with 16 GB VRAM)
-benchmark test data: 16 images
+benchmark test: 16 images
     g4dn.2xlarge Pool(2): 177.89 seconds 20 - 25 s per img
     g4dn.2xlarge Pool(4): 210.52 seconds 40 - 60 s per img
     g4dn.2xlarge Pool(8): 361.72 seconds 160 - 200 s per img
