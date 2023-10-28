@@ -66,8 +66,8 @@ detectron2: 0.6
   
 ## 4. Active learning
 - script that can use retrained model to generate output in labelme format
-- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py)
-- [CPU version, multiprocessing]()
+- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) CUDA preferred (~0.2 s per image)
+- [CPU version, multiprocessing](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (+20 s per image)
   
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
