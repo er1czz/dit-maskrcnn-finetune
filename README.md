@@ -65,9 +65,9 @@ detectron2: 0.6
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
   
 ## 4. Active learning
-- script that can generate labelme json output
-- CUDA version
-- CPU version
+- script that can use retrained model to generate output in labelme format
+- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py)
+- [CPU version, multiprocessing]()
   
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
