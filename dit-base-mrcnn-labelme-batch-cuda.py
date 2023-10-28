@@ -4,7 +4,7 @@ Input: img directory
 2023/10/27 Eric
 
 Performance Note:
-g4dn.2xlarge has up to 8 vCPU (g4dn.xlarge 4 vCPU)
+AWS g4dn.2xlarge (8 vCPU, 1 CUDA with 16 GB VRAM)
 Test data: 16 images (benchmark_imgs)
     g4dn.2xlarge Pool(2): 177.89 seconds 20 - 25 s per img
     g4dn.2xlarge Pool(4): 210.52 seconds 40 - 60 s per img
