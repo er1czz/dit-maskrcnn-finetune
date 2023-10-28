@@ -68,7 +68,7 @@ detectron2: 0.6
 - Script that can use retrained model to generate output in labelme format
   - Inference by CPU (even with multiprocessing) is much slower (two orders of magnitude) than by CUDA of single process.
   - e.g. AWS g4dn.2xlarge CUDA inference of 500 images took about 340 s.
-- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (~0.2 s per image)
+- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (~0.6 s per image)
 - [CPU version, multiprocessing](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (+20 s per image)
   
 ## Result
