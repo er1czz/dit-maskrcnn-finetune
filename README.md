@@ -65,8 +65,9 @@ detectron2: 0.6
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
   
 ## 4. Active learning
-- script that can use retrained model to generate output in labelme format
-- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) CUDA preferred (~0.2 s per image)
+- Script that can use retrained model to generate output in labelme format
+  - note: Even with multiprocessing enabled, inference by CPU is much slower (two orders of magnitude) than by CUDA of single process.
+- [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (~0.2 s per image)
 - [CPU version, multiprocessing](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (+20 s per image)
   
 ## Result
