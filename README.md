@@ -63,7 +63,12 @@ detectron2: 0.6
   - for more details, please check **DiT_tutorial.ipynb**
 ## 3 Model retraining
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
-
+  
+## 4. Active learning
+- script that can generate labelme json output
+- CUDA version
+- CPU version
+  
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
 - therefore, the inference result from this "lightly" tuned model (right inset below) is not ideal albeit the prediction is for single-class.
@@ -74,3 +79,4 @@ detectron2: 0.6
 </p> 
 <p align="center">LEFT inset: original model for multi-classes detection</p>
 <p align="center">RIGHT inset: fine-tuned model for single-class detection</p>
+
