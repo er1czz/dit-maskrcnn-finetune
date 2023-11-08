@@ -56,7 +56,7 @@ torch:  2.0 ; cuda:  cu118
 detectron2: 0.6
 ```
 - Install cuda and then PyTorch
-- Install [detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) (perfer to install from source)
+- Install [detectron2](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) (installing from source is recommended)
 - Then ```pip install -r dit_requirement.txt``` [dit_requirement.txt](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit_requirement.txt)
 - Clone unilm repo (DiT is part of unilm) ```git clone https://github.com/microsoft/unilm.git```
   - If you use Python3.10 or above, you will encounter this error ```ImportError: cannot import name 'Iterable' from 'collections'```
