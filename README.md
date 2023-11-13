@@ -62,16 +62,20 @@ detectron2: 0.6
   - If you use Python3.10 or above, you will encounter this error ```ImportError: cannot import name 'Iterable' from 'collections'```
   - Please modify *unilm/dit/object_detection/ditod/table_evaluation/data_structure.py* replace line 6 as ```Iterable from collections.abc```
   - for more details, please check **DiT_tutorial.ipynb**
+
 ## 3 Model retraining
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
-  
-## 4. Active learning
+
+## 4 Evaluation (metrics)
+- [Notebook](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/evaluation.py)
+
+## 5. Batch inference (active learning)
 - Script that can use retrained model to generate output in labelme format
   - Inference by CPU (even with multiprocessing) is much slower (two orders of magnitude) than by CUDA of single process.
   - e.g. AWS g4dn.2xlarge CUDA inference of 500 images took about 340 s.
 - [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (~0.6 s per image)
 - [CPU version, multiprocessing](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (+20 s per image)
-  
+
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
 - therefore, the inference result from this "lightly" tuned model (right inset below) is not ideal albeit the prediction is for single-class.
