@@ -73,7 +73,7 @@ def main_fn():
 
     files = os.listdir(img_dir)
     for i in files:
-        if i.endswith(".png"): ### validation set are exclusively jpg format
+        if i.endswith(("jpg", ".png")): ### validation set are exclusively jpg or png format
             image_path = os.path.join(img_dir, i)
             out_path = os.path.join(out_dir, i)
             img = np.asarray(Image.open(image_path))
