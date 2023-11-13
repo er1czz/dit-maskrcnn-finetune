@@ -66,8 +66,8 @@ detectron2: 0.6
 ## 3 Model retraining
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
 
-## 4 Evaluation (metrics)
-- [Notebook](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/evaluation.py)
+## 4 Evaluation (performance metrics)
+- [python script](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/evaluation.py)
 
 ## 5. Batch inference (active learning)
 - Script that can use retrained model to generate output in labelme format
