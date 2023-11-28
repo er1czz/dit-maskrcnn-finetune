@@ -10,14 +10,14 @@
 
 ## 1 Custom data labeling and preprocess
 ### Note1: common datasets for document layout
-- HierText (2023)  11639 images {hierarchical annotations of text in natural scenes and documents}
 - DocLayNet (2023) 28GB, 80863 pages {financial_reports,scientific_articles,laws_and_regulations, government_tenders, manuals, patents}
 - DocBank (2020) 50GB, 500K pages from arXiv.com {scientifi articles}
 - PubLayNet (2019) 96GB, over 1 million pdf from PubMed {scientific articles}
 - RVL-CDIP (2015) 37GB, 400,000 grayscale images, 16 classes
   - {"letter", "form", "email", "handwritten", "advertisement", "scientific report", "scientific publication", "specification", "file folder", "news article", "budget", "invoice", "presentation", "questionnaire", "resume", "memo"}
 - PRImA Layout Analysis Dataset (2009) 1240 pages {magazines pages, technical articles}
-
+- *somewhate relevant* HierText (2023)  11639 images {hierarchical annotations of text in natural scenes and documents}
+  
 ### Note2: labeling tools
 - labelme  https://github.com/wkentaro/labelme   
   - very basic functions and app can crush sometimes (remember to enable autosave)
