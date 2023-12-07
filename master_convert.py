@@ -1,3 +1,4 @@
+'''
 This script will process labelme labels (plural: json files) and output coco label (single json file).
 1) First step: generate coco label file from labelme label files via labelme2coco library
 2) Second step: generate masks (segmentation) from bboxes with custom functions: bbox2seg and seg_gen
