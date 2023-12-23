@@ -66,7 +66,19 @@ detectron2: 0.6
 
 ## 3 Model retraining
 - please refer to [DiT_tutorial.ipynb](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/DiT_tutorial.ipynb)
-
+- warmup learning rate
+```
+# train specs
+cfg.SOLVER.IMS_PER_BATCH = 2  # batch size
+cfg.SOLVER.MAX_ITER = 100000   # max_iteration(100000) = images_count(500) * epoch(400) / batch_size (2)
+cfg.SOLVER.BASE_LR = 25e-5  # LR (0.00025)
+cfg.SOLVER.LR_SCHEDULER_NAME = "WarmupCosineLR"
+cfg.SOLVER.WARMUP_ITERS = int(0.2*cfg.SOLVER.MAX_ITER)
+cfg.SOLVER.CLIP_GRADIENTS.ENABLED = True
+cfg.SOLVER.CLIP_GRADIENTS.CLIP_TYPE = "value"
+cfg.SOLVER.CLIP_GRADIENTS.CLIP_VALUE = 1.0
+cfg.SOLVER.AMP.ENABLED = True
+```
 ## 4 Evaluation (performance metrics)
 - [python script](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/evaluation.py)
 
