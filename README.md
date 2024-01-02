@@ -79,6 +79,26 @@ cfg.SOLVER.CLIP_GRADIENTS.CLIP_TYPE = "value"
 cfg.SOLVER.CLIP_GRADIENTS.CLIP_VALUE = 1.0
 cfg.SOLVER.AMP.ENABLED = True
 ```
+- data augmentation [basic functions](https://github.com/facebookresearch/detectron2/blob/main/detectron2/data/transforms/augmentation_impl.py)
+```
+# data augmentation during retrain
+from detectron2.data import DatasetMapper, build_detection_train_loader
+from detectron2.data import transforms as T
+class MyTrainer_Aug(MyTrainer):
+    @classmethod
+    def build_train_loader(cls, cfg):
+        mapper = DatasetMapper(cfg, is_train=True,
+                                use_instance_mask = True, # must enable, otherwise gt_mask error
+                                augmentations=[T.AugmentationList([
+                                   T.RandomBrightness(0.9, 1.1),
+                                   T.RandomFlip(prob=0.5),
+                                   #T.Resize((800, 1200)) # h, w 
+                                   T.ResizeShortestEdge(800, 1200) # shorter edge will be scaled to 800 and longer edge will be no larger than 2000 (ratio locked) OUT OF VRAM
+                                   ])]
+                                )
+        return build_detection_train_loader(cfg, mapper=mapper)
+```
+  - use ```trainer = MyTrainer_Aug(cfg)``` instead of ```trainer = MyTrainer(cfg)```
 ## 4 Evaluation (performance metrics)
 - [python script](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/evaluation.py)
 
