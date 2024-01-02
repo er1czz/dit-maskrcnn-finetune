@@ -79,7 +79,10 @@ cfg.SOLVER.CLIP_GRADIENTS.CLIP_TYPE = "value"
 cfg.SOLVER.CLIP_GRADIENTS.CLIP_VALUE = 1.0
 cfg.SOLVER.AMP.ENABLED = True
 ```
-- data augmentation [basic functions](https://github.com/facebookresearch/detectron2/blob/main/detectron2/data/transforms/augmentation_impl.py)
+- data augmentation (!!! **issue** could be conflict in the source code)
+  - error message: *AttributeError: Cannot find field 'gt_masks' in the given Instances!*
+- [dit trainer source code](https://github.com/microsoft/unilm/blob/master/dit/object_detection/ditod/mytrainer.py)
+- [detectron data augmentation source code](https://github.com/facebookresearch/detectron2/blob/main/detectron2/data/transforms/augmentation_impl.py)
 ```
 # data augmentation during retrain
 from detectron2.data import DatasetMapper, build_detection_train_loader
