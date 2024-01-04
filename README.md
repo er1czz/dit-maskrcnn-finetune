@@ -114,7 +114,7 @@ class MyTrainer_Aug(MyTrainer):
 
 ## 6. Data Augmentation (create a new dataset)
 - [Albumentations](https://albumentations.ai/), a Python Library for image augmentation
-- An custom interactive script that will create a new dataset with ' _AuG' inserted in the file and path names
+- [A custom interactive script](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/img_bbox_aug_gen.py) that will create a new dataset with ' _AuG' inserted in the file and path names
   
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
