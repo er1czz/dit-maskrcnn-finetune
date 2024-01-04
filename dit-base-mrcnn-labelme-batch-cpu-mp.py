@@ -1,4 +1,7 @@
 '''
+Update with class mapping in case of multi-class output
+2024/01/04 Eric
+
 Code that generates labelme json files by 
 Input: img directory
 2023/10/27 Eric
