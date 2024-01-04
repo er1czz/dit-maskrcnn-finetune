@@ -56,25 +56,27 @@ cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
 # 4: define model
 predictor = DefaultPredictor(cfg)
 
+# 5: define class mapping
+cls_map = {0:'blob'}
 
-def json_gen(img_path,json_path,boxes): 
+def json_gen(img_path, json_path, pred_boxes, pred_classes, cls_map): 
 # generate labelme label json
     image=cv2.imread(img_path) 
     g={} 
     g["version"]="5.1.1"
     g["flags"]={} 
     g["shapes"]=[] 
-    for box in boxes: 
+    for i in range(len(pred_boxes)):
+        box = pred_boxes[i] 
+        cls = pred_classes[i]
         g_int={}
-        g_int["label"]= 'blob'
-        y1,x1,y2,x2=int(box[0]), int(box[1]), int(box[2]), int(box[3]) 
-        g_int["points"]=[[int(y1),int(x1)],[int(y2),int(x2)]] 
+        g_int["label"]= cls_map[cls]
+        x1,y1,x2,y2=int(box[0]), int(box[1]), int(box[2]), int(box[3]) 
+        g_int["points"]=[[int(x1),int(y1)],[int(x2),int(y2)]] 
         g_int["group_id"]=None 
         g_int["shape_type"]="rectangle" 
         g_int["flags"]={} 
-        
         g["shapes"].append(g_int) 
-    
     g["imagePath"]=img_path.split("/")[-1] 
     g["imageData"]=None
     g["imageHeight"]=image.shape[0]
@@ -92,11 +94,12 @@ def main_fun(img_path):
     image = cv2.imread(img_path)
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-    res = predictor(image)['instances'].to("cpu")
-    boxes = res.pred_boxes.tensor.numpy()
-
+    output = predictor(image)
+    res = output['instances'].to("cpu")
+    pred_boxes = res.pred_boxes.tensor.numpy()
+    pred_classes = res.pred_classes.numpy()
     json_path = os.path.splitext(img_path)[0]+'.json'
-    json_gen(img_path, json_path, boxes) 
+    json_gen(img_path, json_path, pred_boxes, pred_classes, cls_map) 
     print(f'processed: {img_path} with output: {json_path}')
     print(f'{round((time.time() - start_time), 2)}s")\n')
 
