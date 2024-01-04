@@ -79,7 +79,7 @@ cfg.SOLVER.CLIP_GRADIENTS.CLIP_TYPE = "value"
 cfg.SOLVER.CLIP_GRADIENTS.CLIP_VALUE = 1.0
 cfg.SOLVER.AMP.ENABLED = True
 ```
-- data augmentation (!!! **issue** could be conflict in the source code)
+- data augmentation during training (!!! **issue** could be conflict in the source code)
   - error message: *AttributeError: Cannot find field 'gt_masks' in the given Instances!*
 - [DiT trainer source code](https://github.com/microsoft/unilm/blob/master/dit/object_detection/ditod/mytrainer.py)
 - [Detectron2 data augmentation source code](https://github.com/facebookresearch/detectron2/blob/main/detectron2/data/transforms/augmentation_impl.py)
@@ -112,6 +112,10 @@ class MyTrainer_Aug(MyTrainer):
 - [CUDA version](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (~0.6 s per image)
 - [CPU version, multiprocessing](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/dit-base-mrcnn-labelme-batch-cuda.py) (+20 s per image)
 
+## 6. Data Augmentation (create a new dataset)
+- [Albumentations](https://albumentations.ai/), a Python Library for image augmentation
+- An custom interactive script that will create a new dataset with ' _AuG' inserted in the file and path names
+  
 ## Result
 - please note the fine-tuning was carried out with a small dataset of 20 images.
 - therefore, the inference result from this "lightly" tuned model (right inset below) is not ideal albeit the prediction is for single-class.
