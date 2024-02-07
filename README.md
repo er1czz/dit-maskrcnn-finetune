@@ -117,8 +117,8 @@ class MyTrainer_Aug(MyTrainer):
 - [A custom interactive script](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/img_bbox_aug_gen.py) that will create a new dataset with ' _AuG' inserted in the file and path names
   
 ## 7. Result
-- combine images side-by-side (nx2) [script1]()
-- combine images side-by-side (nx3) [script2]()
+- combine images side-by-side (nx2) [script1](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/img_nx2.py)
+- combine images side-by-side (nx3) [script2](https://github.com/er1czz/dit-maskrcnn-finetune/blob/main/img_nx3.py)
 - please note the fine-tuning was carried out with a small dataset of 20 images.
 - therefore, the inference result from this "lightly" tuned model (right inset below) is not ideal albeit the prediction is for single-class.
 
